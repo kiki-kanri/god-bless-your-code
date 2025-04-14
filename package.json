@@ -44,7 +44,7 @@
     "node": ">=18.12.1"
   },
   "scripts": {
-    "build": "ts-project-builder ./src/index.ts --clean --preserve-modules --sourcemaps",
+    "build": "ts-project-builder ./src/index.ts --clean --sourcemaps",
     "bumplog": "changelogen --bump --hideAuthorEmail",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
