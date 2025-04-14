@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.1.1
+
+[compare changes](https://github.com/kiki-kanri/rollup-plugin-god-bless-your-code/compare/v0.1.0...v0.1.1)
+
+### 🩹 Fixes
+
+- Add missing `map` field to return value in `renderChunk` ([b3450de](https://github.com/kiki-kanri/rollup-plugin-god-bless-your-code/commit/b3450de))
+
+### 📦 Build
+
+- Apply this plugin to itself during build ([985b514](https://github.com/kiki-kanri/rollup-plugin-god-bless-your-code/commit/985b514))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v0.1.0
 
 [compare changes](https://github.com/kikiutils/node-types/compare/662e280...v0.1.0)
