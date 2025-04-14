@@ -1,4 +1,4 @@
-# rollup-plugin-god-bless-your-code
+# god-bless-your-code
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -28,7 +28,7 @@ A Rollup plugin that blesses your code with ASCII gods, monsters, and mystical p
 Using [pnpm](https://pnpm.io):
 
 ```bash
-pnpm add -D rollup-plugin-god-bless-your-code
+pnpm add -D god-bless-your-code
 ```
 
 You can also use `yarn`, `npm`, or `bun`.
@@ -39,7 +39,7 @@ Here's and example usage in your `rollup.config.mjs` file:
 
 ```typescript
 import { defineConfig } from 'rollup';
-import { godBlessYourCode } from 'rollup-plugin-god-bless-your-code';
+import { godBlessYourCode } from 'god-bless-your-code';
 
 export default defineConfig({
     input: './src/index.ts',
@@ -68,7 +68,7 @@ import {
     bless,
     god,
     godBless,
-} from 'rollup-plugin-god-bless-your-code';
+} from 'god-bless-your-code';
 ```
 
 ## Available Blessings
@@ -89,11 +89,11 @@ Blessing names map to `.txt` files in [`./src/blessing-texts`](./src/blessing-te
 [MIT License](./LICENSE)
 
 <!-- Badges -->
-[npm-version-href]: https://npmjs.com/package/rollup-plugin-god-bless-your-code
-[npm-version-src]: https://img.shields.io/npm/v/rollup-plugin-god-bless-your-code/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/god-bless-your-code
+[npm-version-src]: https://img.shields.io/npm/v/god-bless-your-code/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[npm-downloads-href]: https://npmjs.com/package/rollup-plugin-god-bless-your-code
-[npm-downloads-src]: https://img.shields.io/npm/dm/rollup-plugin-god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/god-bless-your-code
+[npm-downloads-src]: https://img.shields.io/npm/dm/god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[license-href]: https://github.com/kiki-kanri/rollup-plugin-god-bless-your-code/blob/main/LICENSE
-[license-src]: https://img.shields.io/npm/l/rollup-plugin-god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://github.com/kiki-kanri/god-bless-your-code/blob/main/LICENSE
+[license-src]: https://img.shields.io/npm/l/god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D

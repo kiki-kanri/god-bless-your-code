@@ -1,12 +1,12 @@
 {
-  "name": "rollup-plugin-god-bless-your-code",
+  "name": "god-bless-your-code",
   "version": "0.1.1",
   "description": "A Rollup plugin that blesses your code with ASCII gods, monsters, and mystical powers. Your last defense against production bugs and angry PMs.",
   "author": "kiki-kanri",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiki-kanri/rollup-plugin-god-bless-your-code.git"
+    "url": "git+https://github.com/kiki-kanri/god-bless-your-code.git"
   },
   "keywords": [
     "ascii",
