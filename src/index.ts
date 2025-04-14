@@ -10,7 +10,9 @@ import { fileURLToPath } from 'node:url';
 import micromatch from 'micromatch';
 import type { Plugin } from 'rollup';
 
-export type BlessingName = string;
+export type BlessingName =
+  | 'buddha-normal'
+  | 'buddha-with-poetry';
 
 export interface RollupGodBlessYourCodeOptions {
     blessings?: BlessingName | BlessingName[];
@@ -21,7 +23,10 @@ export interface RollupGodBlessYourCodeOptions {
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const blessingNameToTextMap: Partial<Record<BlessingName, string>> = {};
-const defaultBlessings: readonly BlessingName[] = [];
+const defaultBlessings: readonly BlessingName[] = [
+    'buddha-normal',
+    'buddha-with-poetry',
+];
 
 function loadBlessingText(name: BlessingName) {
     if (blessingNameToTextMap[name]) return blessingNameToTextMap[name];
