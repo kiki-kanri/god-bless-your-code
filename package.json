@@ -61,6 +61,7 @@
     "@types/micromatch": "^4.0.9",
     "@types/node": "^22.14.1",
     "rollup": "^4.40.0",
+    "self": "npm:rollup-plugin-god-bless-your-code@^0.1.0",
     "ts-project-builder": "^4.0.1"
   },
   "pnpm": {

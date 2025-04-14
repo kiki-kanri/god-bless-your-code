@@ -1,5 +1,6 @@
 import { cpSync } from 'node:fs';
 
+import { godBlessYourCode } from 'self';
 import { defineConfig } from 'ts-project-builder';
 
 let isBlessingTextsCopied = false;
@@ -17,4 +18,5 @@ export default defineConfig({
             },
         ],
     },
+    additionalOutputPlugins: { default: { afterBuiltIns: [godBlessYourCode()] } },
 });
