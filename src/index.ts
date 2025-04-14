@@ -80,7 +80,10 @@ export function godBlessYourCode(options: RollupGodBlessYourCodeOptions = {}): P
             const blessingText = loadBlessingText(chosenBlessingName);
             if (!blessingText) return;
             const finalCode = position === 'top' ? `${blessingText}\n\n${code}` : `${code}\n\n${blessingText}`;
-            return { code: finalCode };
+            return {
+                code: finalCode,
+                map: null,
+            };
         },
     };
 }
