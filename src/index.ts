@@ -61,5 +61,3 @@ export {
     godBlessYourCode as god,
     godBlessYourCode as godBless,
 };
-
-export default godBlessYourCode;
