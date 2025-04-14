@@ -8,7 +8,25 @@
     "type": "git",
     "url": "git+https://github.com/kiki-kanri/rollup-plugin-god-bless-your-code.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ascii",
+    "ascii-art",
+    "bless",
+    "blessing",
+    "buddha",
+    "charm",
+    "code-style",
+    "comment",
+    "fun",
+    "god",
+    "magic",
+    "no-bugs",
+    "plugin",
+    "protect-code",
+    "ritual",
+    "rollup",
+    "rollup-plugin"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
