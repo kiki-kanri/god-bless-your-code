@@ -45,7 +45,7 @@
   },
   "scripts": {
     "build": "ts-project-builder ./src/index.ts --clean --preserve-modules --sourcemaps",
-    "bumplog": "changelogen --bump",
+    "bumplog": "changelogen --bump --hideAuthorEmail",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepack": "pnpm run build",

@@ -3,6 +3,7 @@ import { cpSync } from 'node:fs';
 import { defineConfig } from 'ts-project-builder';
 
 let isBlessingTextsCopied = false;
+
 export default defineConfig({
     additionalInputPlugins: {
         afterBuiltIns: [
