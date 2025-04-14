@@ -11,8 +11,10 @@ import micromatch from 'micromatch';
 import type { Plugin } from 'rollup';
 
 export type BlessingName =
+  | 'alpaca'
   | 'buddha-normal'
-  | 'buddha-with-poetry';
+  | 'buddha-with-poetry'
+  | 'dragon';
 
 export interface RollupGodBlessYourCodeOptions {
     /**
@@ -20,7 +22,13 @@ export interface RollupGodBlessYourCodeOptions {
      * If multiple are provided, one will be chosen at random per file.
      * These should match the filenames (without extension) in the blessing-texts folder.
      *
-     * @default ['buddha-normal', 'buddha-with-poetry']
+     * @default
+     * [
+     *      'alpaca',
+     *      'buddha-normal',
+     *      'buddha-with-poetry',
+     *      'dragon',
+     * ]
      */
     blessings?: BlessingName | BlessingName[];
 
@@ -48,8 +56,10 @@ export interface RollupGodBlessYourCodeOptions {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const blessingNameToTextMap: Partial<Record<BlessingName, string>> = {};
 const defaultBlessings: readonly BlessingName[] = [
+    'alpaca',
     'buddha-normal',
     'buddha-with-poetry',
+    'dragon',
 ];
 
 function loadBlessingText(name: BlessingName) {

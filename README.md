@@ -75,11 +75,14 @@ import {
 
 Blessing names map to `.txt` files in [`./src/blessing-texts`](./src/blessing-texts).
 
+- alpaca
 - buddha-normal
 - buddha-with-poetry
+- dragon
 
 > Blessing sources:
 > - https://www.cnblogs.com/ghl1024/p/9082892.html
+> - https://github.com/ben-yip/grunt-buddha-bless/blob/master/tasks/asset/alpaca.txt
 
 ## License
 
