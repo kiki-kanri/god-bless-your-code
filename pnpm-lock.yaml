@@ -31,8 +31,8 @@ importers:
         specifier: ^4.40.0
         version: 4.40.0
       self:
-        specifier: npm:god-bless-your-code@^0.2.0
-        version: god-bless-your-code@0.2.0
+        specifier: npm:god-bless-your-code@^0.2.1
+        version: god-bless-your-code@0.2.1
       ts-project-builder:
         specifier: ^4.0.1
         version: 4.0.1(esbuild@0.25.2)(tslib@2.8.1)(typescript@5.8.3)
@@ -1453,8 +1453,8 @@ packages:
     resolution: {integrity: sha512-iInW14XItCXET01CQFqudPOWP2jYMl7T+QRQT+UNcR/iQncN/F0UNpgd76iFkBPgNQb4+X3LV9tLJYzwh+Gl3A==}
     engines: {node: '>=18'}
 
-  god-bless-your-code@0.2.0:
-    resolution: {integrity: sha512-8cAyUxc822Dz70hKh7t6EcSO35FPWiPbwDNbcL0PN53gGo6Uu2CB2QzDNgkmHxGKIti9vTbydBrsNCq4f1ZwJA==}
+  god-bless-your-code@0.2.1:
+    resolution: {integrity: sha512-fLgf1tWzhOm3yh+z0NXkXZ3Nov/jtO95dQeW7Vb14X4lTqDeY6NGV7rfMdaWHSwza9wU4PJ5OY4Pzj9hzi0PIw==}
     engines: {node: '>=18.12.1'}
 
   graceful-fs@4.2.11:
@@ -3901,7 +3901,7 @@ snapshots:
 
   globals@16.0.0: {}
 
-  god-bless-your-code@0.2.0:
+  god-bless-your-code@0.2.1:
     dependencies:
       micromatch: 4.0.8
 
