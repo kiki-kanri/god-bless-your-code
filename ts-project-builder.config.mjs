@@ -1,6 +1,6 @@
 import { cpSync } from 'node:fs';
 
-import { godBlessYourCode } from 'self';
+import { godBlessYourCode } from 'self/rollup';
 import { defineConfig } from 'ts-project-builder';
 
 let isBlessingTextsCopied = false;
