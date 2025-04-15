@@ -2,104 +2,49 @@ import { readFileSync } from 'node:fs';
 import {
     dirname,
     join,
-    relative,
 } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// @ts-expect-error Ignore this error.
-import micromatch from 'micromatch';
-import type { Plugin } from 'rollup';
+import { defaultBlessings } from './constants';
+import type {
+    BlessingName,
+    GodBlessYourCodeOptions,
+} from './types';
 
-export type BlessingName =
-  | 'alpaca'
-  | 'buddha-normal'
-  | 'buddha-with-poetry'
-  | 'dragon';
-
-export interface RollupGodBlessYourCodeOptions {
-    /**
-     * The name or list of blessing(s) to insert.
-     * If multiple are provided, one will be chosen at random per file.
-     * These should match the filenames (without extension) in the blessing-texts folder.
-     *
-     * @default
-     * [
-     *      'alpaca',
-     *      'buddha-normal',
-     *      'buddha-with-poetry',
-     *      'dragon',
-     * ]
-     */
-    blessings?: BlessingName | BlessingName[];
-
-    /**
-     * Glob patterns to exclude files from being blessed.
-     * Matches are checked against the relative path of the original input file.
-     */
-    exclude?: string[];
-
-    /**
-     * Glob patterns to include files for blessing.
-     * If provided, only matched files will be processed.
-     * Matches are checked against the relative path of the original input file.
-     */
-    include?: string[];
-
-    /**
-     * Where to insert the blessing: at the top or bottom of the output file.
-     *
-     * @default 'top'
-     */
-    position?: 'bottom' | 'top';
-}
+export type * from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const blessingNameToTextMap: Partial<Record<BlessingName, string>> = {};
-const defaultBlessings: readonly BlessingName[] = [
-    'alpaca',
-    'buddha-normal',
-    'buddha-with-poetry',
-    'dragon',
-];
 
-function loadBlessingText(name: BlessingName) {
+export function godBlessYourCode(
+    code: string,
+    codeType: 'css' | 'html' | 'js' | 'ts' | 'unknown',
+    options: Pick<GodBlessYourCodeOptions, 'blessings' | 'position'> = {},
+) {
+    // eslint-disable-next-line style/object-curly-newline
+    const { blessings = defaultBlessings, position = 'top' } = options;
+    const chosenBlessingName: BlessingName | undefined = Array.isArray(blessings)
+        ? blessings[Math.floor(Math.random() * blessings.length)]
+        : blessings;
+
+    if (!chosenBlessingName) return;
+    let blessingText = loadBlessingText(chosenBlessingName);
+    if (!blessingText) return;
+    const wrap = (content: string) => {
+        switch (codeType) {
+            case 'css':
+            case 'js':
+            case 'ts': return `/*\n${content}\n*/`;
+            case 'html': return `<!--\n${content}\n-->`;
+            default: return `/*\n${content}\n*/`;
+        }
+    };
+
+    blessingText = wrap(blessingText);
+    return position === 'top' ? `${blessingText}\n\n${code}` : `${code}\n\n${blessingText}`;
+}
+
+export function loadBlessingText(name: BlessingName) {
     if (blessingNameToTextMap[name]) return blessingNameToTextMap[name];
     return blessingNameToTextMap[name] = readFileSync(join(__dirname, 'blessing-texts', `${name}.txt`), 'utf-8').trim();
 }
-
-export function godBlessYourCode(options: RollupGodBlessYourCodeOptions = {}): Plugin {
-    const {
-        blessings = defaultBlessings,
-        exclude,
-        include,
-        position = 'top',
-    } = options;
-
-    return {
-        name: 'god-bless-your-code',
-        renderChunk(code, { facadeModuleId }) {
-            if (!facadeModuleId) return;
-            const relativeModulePath = relative(process.cwd(), facadeModuleId);
-            if (exclude && micromatch.isMatch(relativeModulePath, exclude)) return;
-            if (include && !micromatch.isMatch(relativeModulePath, include)) return;
-            const chosenBlessingName: BlessingName | undefined = Array.isArray(blessings)
-                ? blessings[Math.floor(Math.random() * blessings.length)]
-                : blessings;
-
-            if (!chosenBlessingName) return;
-            const blessingText = loadBlessingText(chosenBlessingName);
-            if (!blessingText) return;
-            const finalCode = position === 'top' ? `${blessingText}\n\n${code}` : `${code}\n\n${blessingText}`;
-            return {
-                code: finalCode,
-                map: null,
-            };
-        },
-    };
-}
-
-export {
-    godBlessYourCode as bless,
-    godBlessYourCode as god,
-    godBlessYourCode as godBless,
-};

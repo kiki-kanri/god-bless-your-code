@@ -33,6 +33,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
+    },
+    "./rollup": {
+      "types": "./dist/rollup.d.ts",
+      "import": "./dist/rollup.mjs",
+      "require": "./dist/rollup.cjs"
     }
   },
   "types": "./dist/index.d.ts",
@@ -44,7 +49,7 @@
     "node": ">=18.12.1"
   },
   "scripts": {
-    "build": "ts-project-builder ./src/index.ts --clean --sourcemaps",
+    "build": "ts-project-builder './src/{index,rollup}.ts' --clean --preserve-modules --sourcemaps",
     "bumplog": "changelogen --bump --hideAuthorEmail",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
