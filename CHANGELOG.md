@@ -66,7 +66,7 @@
 
 ## v0.1.0
 
-[compare changes](https://github.com/kikiutils/node-types/compare/662e280...v0.1.0)
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/662e280...v0.1.0)
 
 ### 🚀 Enhancements
 
