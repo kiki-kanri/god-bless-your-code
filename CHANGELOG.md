@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.2.0
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.1.1...v0.2.0)
+
+### 🚀 Enhancements
+
+- Add english to `buddha-normal` blessing text ([327d61e](https://github.com/kiki-kanri/god-bless-your-code/commit/327d61e))
+- Add more blessing texts ([fab3d44](https://github.com/kiki-kanri/god-bless-your-code/commit/fab3d44))
+- ⚠️ Refactor and restructure core logic and plugin ([cae0015](https://github.com/kiki-kanri/god-bless-your-code/commit/cae0015))
+
+### 📦 Build
+
+- Remove `--preserve-modules` flag from build script ([1214a74](https://github.com/kiki-kanri/god-bless-your-code/commit/1214a74))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([41e694c](https://github.com/kiki-kanri/god-bless-your-code/commit/41e694c))
+- ⚠️ Rename package to `god-bless-your-code` ([8cfa021](https://github.com/kiki-kanri/god-bless-your-code/commit/8cfa021))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️ Refactor and restructure core logic and plugin ([cae0015](https://github.com/kiki-kanri/god-bless-your-code/commit/cae0015))
+- ⚠️ Rename package to `god-bless-your-code` ([8cfa021](https://github.com/kiki-kanri/god-bless-your-code/commit/8cfa021))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v0.1.1
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.1.0...v0.1.1)

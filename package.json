@@ -1,6 +1,6 @@
 {
   "name": "god-bless-your-code",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A Rollup plugin that blesses your code with ASCII gods, monsters, and mystical powers. Your last defense against production bugs and angry PMs.",
   "author": "kiki-kanri",
   "license": "MIT",

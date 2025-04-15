@@ -38,8 +38,8 @@ You can also use `yarn`, `npm`, or `bun`.
 Here's and example usage in your `rollup.config.mjs` file:
 
 ```typescript
-import { defineConfig } from 'rollup';
 import { godBlessYourCode } from 'god-bless-your-code';
+import { defineConfig } from 'rollup';
 
 export default defineConfig({
     input: './src/index.ts',
