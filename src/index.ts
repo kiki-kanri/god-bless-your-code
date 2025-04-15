@@ -15,6 +15,7 @@ export type * from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const blessingNameToTextMap: Partial<Record<BlessingName, string>> = {};
+const blessingTextsDirPath = join(__dirname, 'blessing-texts');
 
 export function godBlessYourCode(
     code: string,
@@ -46,5 +47,5 @@ export function godBlessYourCode(
 
 export function loadBlessingText(name: BlessingName) {
     if (blessingNameToTextMap[name]) return blessingNameToTextMap[name];
-    return blessingNameToTextMap[name] = readFileSync(join(__dirname, 'blessing-texts', `${name}.txt`), 'utf-8').trim();
+    return blessingNameToTextMap[name] = readFileSync(join(blessingTextsDirPath, `${name}.txt`), 'utf-8').trimEnd();
 }
