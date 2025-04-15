@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.2.1
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.2.0...v0.2.1)
+
+### 🩹 Fixes
+
+- Preserve leading whitespace in `loadBlessingText` ([aae640d](https://github.com/kiki-kanri/god-bless-your-code/commit/aae640d))
+
+### 📖 Documentation
+
+- Update README and package description ([1bc9cef](https://github.com/kiki-kanri/god-bless-your-code/commit/1bc9cef))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([b634149](https://github.com/kiki-kanri/god-bless-your-code/commit/b634149))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v0.2.0
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.1.1...v0.2.0)
