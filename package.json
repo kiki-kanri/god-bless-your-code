@@ -62,12 +62,12 @@
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
-    "@kikiutils/tsconfigs": "^4.1.0",
+    "@kikiutils/tsconfigs": "^4.1.1",
     "@types/micromatch": "^4.0.9",
     "@types/node": "^22.14.1",
     "rollup": "^4.40.0",
     "self": "npm:god-bless-your-code@^0.2.1",
-    "ts-project-builder": "^4.0.1"
+    "ts-project-builder": "^5.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
