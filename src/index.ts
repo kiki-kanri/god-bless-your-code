@@ -22,8 +22,7 @@ export function godBlessYourCode(
     codeType: 'css' | 'html' | 'js' | 'ts' | 'unknown',
     options: Pick<GodBlessYourCodeOptions, 'blessings' | 'position'> = {},
 ) {
-    // eslint-disable-next-line style/object-curly-newline
-    const { blessings = defaultBlessings, position = 'top' } = options;
+    const { blessings = defaultBlessings } = options;
     const chosenBlessingName: BlessingName | undefined = Array.isArray(blessings)
         ? blessings[Math.floor(Math.random() * blessings.length)]
         : blessings;
@@ -42,7 +41,7 @@ export function godBlessYourCode(
     };
 
     blessingText = wrap(blessingText);
-    return position === 'top' ? `${blessingText}\n\n${code}` : `${code}\n\n${blessingText}`;
+    return options.position === 'bottom' ? `${code}\n\n${blessingText}` : `${blessingText}\n\n${code}`;
 }
 
 export function loadBlessingText(name: BlessingName) {
