@@ -62,7 +62,7 @@
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
-    "@kikiutils/tsconfigs": "^4.1.1",
+    "@kikiutils/tsconfigs": "^5.0.1",
     "@types/micromatch": "^4.0.9",
     "@types/node": "^22.14.1",
     "rollup": "^4.40.0",
