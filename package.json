@@ -54,7 +54,9 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepack": "pnpm run build",
-    "release": "pnpm run lint && pnpm run build && changelogen --hideAuthorEmail --push --release && npm publish"
+    "release": "pnpm run lint && pnpm run build && pnpm run test && changelogen --hideAuthorEmail --push --release && npm publish",
+    "test": "tsc -p ./tsconfig.test-check.json && jest --coverage",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "micromatch": "^4.0.8"
