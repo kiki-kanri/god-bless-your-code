@@ -28,6 +28,7 @@ export function godBlessYourCode(
         : blessings;
 
     if (!chosenBlessingName) return;
+
     let blessingText = loadBlessingText(chosenBlessingName);
     if (!blessingText) return;
     const wrap = (content: string) => {
@@ -41,6 +42,7 @@ export function godBlessYourCode(
     };
 
     blessingText = wrap(blessingText);
+
     return options.position === 'bottom' ? `${code}\n\n${blessingText}` : `${blessingText}\n\n${code}`;
 }
 
