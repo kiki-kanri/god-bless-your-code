@@ -21,7 +21,7 @@ export function godBlessYourCode(
     code: string,
     codeType: 'css' | 'html' | 'js' | 'ts' | 'unknown',
     options: Pick<GodBlessYourCodeOptions, 'blessings' | 'position'> = {},
-): string | undefined {
+) {
     const { blessings = defaultBlessings } = options;
     const chosenBlessingName: BlessingName | undefined = Array.isArray(blessings)
         ? blessings[Math.floor(Math.random() * blessings.length)]
@@ -46,7 +46,7 @@ export function godBlessYourCode(
     return options.position === 'bottom' ? `${code}\n\n${blessingText}` : `${blessingText}\n\n${code}`;
 }
 
-export function loadBlessingText(name: BlessingName): string {
+export function loadBlessingText(name: BlessingName) {
     if (blessingNameToTextMap[name]) return blessingNameToTextMap[name];
     return blessingNameToTextMap[name] = readFileSync(join(blessingTextsDirPath, `${name}.txt`), 'utf-8').trimEnd();
 }

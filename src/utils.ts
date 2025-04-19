@@ -17,7 +17,7 @@ const jsExtensions = new Set([
     '.ts',
 ]);
 
-export function detectCodeTypeByExt(id: string): 'html' | 'js' | 'unknown' {
+export function detectCodeTypeByExt(id: string) {
     const ext = extname(id).toLowerCase();
     if (htmlExtensions.has(ext)) return 'html';
     if (jsExtensions.has(ext)) return 'js';
