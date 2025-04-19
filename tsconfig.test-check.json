@@ -1,0 +1,10 @@
+{
+  "extends": "@kikiutils/tsconfigs/esnext/es2022.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [
+    "./src",
+    "./tests"
+  ]
+}

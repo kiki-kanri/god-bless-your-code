@@ -63,11 +63,15 @@
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
     "@kikiutils/tsconfigs": "^5.0.1",
+    "@types/jest": "^29.5.14",
     "@types/micromatch": "^4.0.9",
     "@types/node": "^22.14.1",
+    "jest": "^29.7.0",
     "rollup": "^4.40.0",
     "self": "npm:god-bless-your-code@^0.2.1",
-    "ts-project-builder": "^5.0.0"
+    "ts-jest": "^29.3.2",
+    "ts-project-builder": "^5.0.0",
+    "typescript": "^5.8.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
