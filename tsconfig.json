@@ -4,8 +4,7 @@
     "declaration": true,
     "declarationDir": "./dist",
     "declarationMap": true,
-    "emitDeclarationOnly": true,
-    "isolatedDeclarations": true
+    "emitDeclarationOnly": true
   },
   "include": ["./src"]
 }
