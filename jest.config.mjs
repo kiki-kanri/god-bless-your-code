@@ -1,5 +1,5 @@
 /** @type {import('jest').Config} */
-module.exports = {
+export default {
     clearMocks: true,
     testEnvironment: 'node',
     transform: {
