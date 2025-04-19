@@ -2,6 +2,7 @@
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
+<!-- [![codecov][codecov-src]][codecov-href] -->
 [![License][license-src]][license-href]
 
 Bless your code with ASCII gods, monsters, and mystical powers — your last line of defense against bugs and angry PMs.
@@ -107,6 +108,9 @@ Feel free to submit more blessing texts!
 
 [npm-downloads-href]: https://npmjs.com/package/god-bless-your-code
 [npm-downloads-src]: https://img.shields.io/npm/dm/god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
+
+<!-- [codecov-href]: https://codecov.io/gh/kiki-kanri/god-bless-your-code
+[codecov-src]: https://codecov.io/gh/kiki-kanri/god-bless-your-code/graph/badge.svg?token=RNU7FNG8HD -->
 
 [license-href]: https://github.com/kiki-kanri/god-bless-your-code/blob/main/LICENSE
 [license-src]: https://img.shields.io/npm/l/god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
