@@ -2,7 +2,9 @@ export type BlessingName =
   | 'alpaca'
   | 'buddha-normal'
   | 'buddha-with-poetry'
-  | 'dragon';
+  | 'dragon'
+  | 'gopher'
+  | 'guāiguāi';
 
 export interface GodBlessYourCodeOptions {
     /**
@@ -16,6 +18,8 @@ export interface GodBlessYourCodeOptions {
      *      'buddha-normal',
      *      'buddha-with-poetry',
      *      'dragon',
+     *      'gopher',
+     *      'guāiguāi',
      * ]
      */
     blessings?: BlessingName | BlessingName[];

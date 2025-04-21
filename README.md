@@ -113,6 +113,8 @@ Blessing names map to `.txt` files in [`./src/blessing-texts`](./src/blessing-te
 - buddha-normal
 - buddha-with-poetry
 - dragon
+- gopher
+- guāiguāi
 
 > Blessing sources:
 > - https://www.cnblogs.com/ghl1024/p/9082892.html

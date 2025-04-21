@@ -5,4 +5,6 @@ export const defaultBlessings: readonly BlessingName[] = [
     'buddha-normal',
     'buddha-with-poetry',
     'dragon',
+    'gopher',
+    'guāiguāi',
 ];
