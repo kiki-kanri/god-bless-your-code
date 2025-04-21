@@ -14,6 +14,8 @@
     "bless",
     "blessing",
     "buddha",
+    "bun",
+    "bun-plugin",
     "charm",
     "code-style",
     "comment",
@@ -25,7 +27,9 @@
     "protect-code",
     "ritual",
     "rollup",
-    "rollup-plugin"
+    "rollup-plugin",
+    "vite",
+    "vite-plugin"
   ],
   "sideEffects": false,
   "exports": {

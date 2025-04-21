@@ -16,7 +16,6 @@ Bless your code with ASCII gods, monsters, and mystical powers — your last lin
 
 - 🧘 Add ASCII blessings (Buddha, dragons, magical charms...) into your code
 - 🎯 Works as a utility or plugin — compatible with Rollup, Vite, Bun, and more
-- 🧩 Per-file control with `include` / `exclude` options
 - 🎲 Random or fixed selection of blessing arts
 - ✨ Choose blessing placement: top or bottom of the output
 - 🛡️ For spiritual protection only. No guarantees against bugs or cursed deadlines
@@ -69,7 +68,7 @@ export default defineConfig({
 > [!IMPORTANT]
 > This is an output plugin. Make sure it's placed in the `output.plugins` array.
 
-You can also import individual blessings:
+You can also import it as follows:
 
 ```typescript
 import {
@@ -81,7 +80,30 @@ import {
 
 ### Vite
 
-Coming soon.
+Here's an example usage in your `vite.config.ts` file:
+
+```typescript
+import vue from '@vitejs/plugin-vue';
+import { godBlessYourCode } from 'god-bless-your-code/vite';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    plugins: [
+        vue(),
+        godBlessYourCode(),
+    ],
+});
+```
+
+You can also import it as follows:
+
+```typescript
+import {
+    bless,
+    god,
+    godBless,
+} from 'god-bless-your-code/vite';
+```
 
 ## Available Blessings
 
