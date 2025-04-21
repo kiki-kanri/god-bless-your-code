@@ -38,6 +38,11 @@
       "types": "./dist/rollup.d.ts",
       "import": "./dist/rollup.mjs",
       "require": "./dist/rollup.cjs"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "import": "./dist/vite.mjs",
+      "require": "./dist/vite.cjs"
     }
   },
   "types": "./dist/index.d.ts",
@@ -49,7 +54,7 @@
     "node": ">=18.12.1"
   },
   "scripts": {
-    "build": "ts-project-builder ./src/index.ts ./src/rollup.ts --clean --preserve-modules --sourcemaps",
+    "build": "ts-project-builder ./src/index.ts ./src/rollup.ts ./src/vite.ts --clean --preserve-modules --sourcemaps",
     "build:vite": "vite build --config ./playground/vite/vite.config.ts",
     "bumplog": "changelogen --bump --hideAuthorEmail",
     "dev:rollup": "rollup -c ./playground/rollup/rollup.config.ts --configPlugin @rollup/plugin-typescript --watch",
