@@ -51,6 +51,7 @@
   "scripts": {
     "build": "ts-project-builder ./src/index.ts ./src/rollup.ts --clean --preserve-modules --sourcemaps",
     "bumplog": "changelogen --bump --hideAuthorEmail",
+    "dev:rollup": "rollup -c ./playground/rollup/rollup.config.ts --configPlugin @rollup/plugin-typescript --watch",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "prepack": "pnpm run build",
@@ -65,6 +66,7 @@
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
     "@kikiutils/tsconfigs": "^5.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/jest": "^29.5.14",
     "@types/micromatch": "^4.0.9",
     "@types/node": "^22.14.1",
