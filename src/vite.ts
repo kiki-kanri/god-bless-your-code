@@ -9,7 +9,6 @@ export function godBlessYourCode(options?: GodBlessYourCodeOptions): Plugin {
     return {
         apply: 'build',
         generateBundle(_, bundle) {
-            // eslint-disable-next-line style/array-bracket-newline, style/array-element-newline
             Object.entries(bundle).forEach(([fileName, file]) => {
                 const codeType = detectCodeTypeByExt(fileName);
                 if (file.type === 'chunk') file.code = main(file.code, codeType, options) ?? file.code;
