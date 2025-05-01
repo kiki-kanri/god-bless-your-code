@@ -128,13 +128,13 @@ Feel free to submit more blessing texts!
 
 <!-- Badges -->
 [npm-version-href]: https://npmjs.com/package/god-bless-your-code
-[npm-version-src]: https://img.shields.io/npm/v/god-bless-your-code/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/god-bless-your-code/latest.svg?colorA=18181b&colorB=28cf8d&style=flat
 
 [npm-downloads-href]: https://npmjs.com/package/god-bless-your-code
-[npm-downloads-src]: https://img.shields.io/npm/dm/god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-src]: https://img.shields.io/npm/dm/god-bless-your-code.svg?colorA=18181b&colorB=28cf8d&style=flat
 
 <!-- [codecov-href]: https://codecov.io/gh/kiki-kanri/god-bless-your-code
-[codecov-src]: https://codecov.io/gh/kiki-kanri/god-bless-your-code/graph/badge.svg?token=RNU7FNG8HD -->
+[codecov-src]: https://codecov.io/gh/kiki-kanri/god-bless-your-code/graph/badge.svg?token= -->
 
 [license-href]: https://github.com/kiki-kanri/god-bless-your-code/blob/main/LICENSE
-[license-src]: https://img.shields.io/npm/l/god-bless-your-code.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-src]: https://img.shields.io/github/license/kiki-kanri/god-bless-your-code?colorA=18181b&colorB=28cf8d&style=flat
