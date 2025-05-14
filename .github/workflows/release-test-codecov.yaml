@@ -1,22 +1,25 @@
-name: Test Suite
+name: Test and Upload Coverage on Release
 
 on:
   push:
     tags:
-      - 'v*'
-
-  workflow_dispatch:
+      - v*
+  workflow_dispatch: null
 
 jobs:
   test:
+    name: Node ${{ matrix.node-version }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
         node-version:
           - 18.12.1
           - 20.0.0
           - 22.0.0
+          - 24.0.0
+        os:
+          - ubuntu-latest
+          - windows-latest
 
     steps:
       - name: Checkout code
@@ -33,14 +36,14 @@ jobs:
           version: latest
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm i --frozen-lockfile
 
       - name: Run tests with coverage
         run: pnpm run test
 
       - name: Upload coverage to Codecov
-        if: ${{ matrix.os == 'ubuntu-latest' && matrix.node-version == '22.0.0' }}
-        uses: codecov/codecov-action@v4
+        if: ${{ matrix.os == 'ubuntu-latest' && matrix.node-version == '24.0.0' }}
+        uses: codecov/codecov-action@v5
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}

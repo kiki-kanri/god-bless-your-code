@@ -1,6 +1,11 @@
 #!/bin/bash
 
-cd "$(realpath "$(dirname "$(readlink -f "$0")")")" || exit 1
+set -e
+
+SCRIPT_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
+cd "$SCRIPT_DIR"
+
+set +e
 
 [[ " $@ " =~ ' -c ' ]] && rm -rf ./node_modules ./pnpm-lock.yaml
 

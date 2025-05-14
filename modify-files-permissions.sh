@@ -1,6 +1,11 @@
 #!/bin/bash
 
-cd "$(realpath "$(dirname "$(readlink -f "$0")")")" || exit 1
+set -e
+
+SCRIPT_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
+cd "$SCRIPT_DIR"
+
+set +e
 
 git config --replace-all core.filemode true
 find . -name node_modules -prune -o \( -type f -exec chmod 600 {} + \)
