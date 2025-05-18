@@ -1,3 +1,8 @@
-describe('pass', () => {
-    it('pass', () => expect(true).toBe(true));
+import {
+    describe,
+    it,
+} from 'vitest';
+
+describe.concurrent('pass', () => {
+    it('pass', ({ expect }) => expect(true).toBe(true));
 });
