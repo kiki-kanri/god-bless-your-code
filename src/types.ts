@@ -31,3 +31,12 @@ export interface GodBlessYourCodeOptions {
      */
     position?: 'bottom' | 'top';
 }
+
+export interface ViteGodBlessYourCodeOptions extends GodBlessYourCodeOptions {
+    /**
+     * The maximum number of files to process. Set to `null` for no limit.
+     *
+     * @default 3
+     */
+    maxFiles?: null | number;
+}

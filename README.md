@@ -105,6 +105,11 @@ import {
 } from 'god-bless-your-code/vite';
 ```
 
+> [!NOTE]
+> In order not to make the total size of the output too large, a maximum of three files are processed by default.
+>
+> This can be adjusted with `options.maxFiles`.
+
 ## Available Blessings
 
 Blessing names map to `.txt` files in [`./src/blessing-texts`](./src/blessing-texts).
