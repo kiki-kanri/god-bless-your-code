@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.5.0
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.4.0...v0.5.0)
+
+### 🚀 Enhancements
+
+- Add `cat` blessing text ([c3ca302](https://github.com/kiki-kanri/god-bless-your-code/commit/c3ca302))
+
+### 🏡 Chore
+
+- Split `tsconfig` and create build-specific config for production builds ([564b6d2](https://github.com/kiki-kanri/god-bless-your-code/commit/564b6d2))
+- **vitest:** Configure coverage to collect files only under `src/` ([e2c7f65](https://github.com/kiki-kanri/god-bless-your-code/commit/e2c7f65))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v0.4.0
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.3.0...v0.4.0)
