@@ -1,5 +1,45 @@
 # Changelog
 
+## v0.4.0
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.3.0...v0.4.0)
+
+### 🚀 Enhancements
+
+- **vite:** Add `maxFiles` option to limit number of files to process ([fe3aea0](https://github.com/kiki-kanri/god-bless-your-code/commit/fe3aea0))
+
+### 📖 Documentation
+
+- Update README badges urls ([499bc71](https://github.com/kiki-kanri/god-bless-your-code/commit/499bc71))
+- Replace `%2F` with `/` in badge URLs in README ([4aaf916](https://github.com/kiki-kanri/god-bless-your-code/commit/4aaf916))
+- Update README ([dd5a44a](https://github.com/kiki-kanri/god-bless-your-code/commit/dd5a44a))
+
+### 🏡 Chore
+
+- Update `modify-files-permissions.sh` ([89f72e3](https://github.com/kiki-kanri/god-bless-your-code/commit/89f72e3))
+- Upgrade dependencies and format code ([af0ac5c](https://github.com/kiki-kanri/god-bless-your-code/commit/af0ac5c))
+- Add option to `upgrade-dependencies.sh` to clean `node_modules` and `pnpm-lock.yaml` before upgrading ([e542b14](https://github.com/kiki-kanri/god-bless-your-code/commit/e542b14))
+- Upgrade dependencies ([d3ee5a7](https://github.com/kiki-kanri/god-bless-your-code/commit/d3ee5a7))
+- Ensure all scripts change to their own directory before execution ([9be5fbf](https://github.com/kiki-kanri/god-bless-your-code/commit/9be5fbf))
+- Update ignore files ([c81c294](https://github.com/kiki-kanri/god-bless-your-code/commit/c81c294))
+- **scripts:** Ensure all scripts `cd` to their current directory correctly ([5362c3b](https://github.com/kiki-kanri/god-bless-your-code/commit/5362c3b))
+- Set `--max-warnings=0` for `lint` and `lint:fix` ([bffe476](https://github.com/kiki-kanri/god-bless-your-code/commit/bffe476))
+- Upgrade dependencies ([a94c38b](https://github.com/kiki-kanri/god-bless-your-code/commit/a94c38b))
+- Set eslint config to enable `lib` mode ([59e03e4](https://github.com/kiki-kanri/god-bless-your-code/commit/59e03e4))
+- Disable `ts/explicit-function-return-type` eslint rule ([5190f6b](https://github.com/kiki-kanri/god-bless-your-code/commit/5190f6b))
+- Lint code ([f8f0974](https://github.com/kiki-kanri/god-bless-your-code/commit/f8f0974))
+- **test:** Migrate from `jest` to `vitest` ([9a9d869](https://github.com/kiki-kanri/god-bless-your-code/commit/9a9d869))
+- Upgrade dependencies ([4775a93](https://github.com/kiki-kanri/god-bless-your-code/commit/4775a93))
+
+### 🤖 CI
+
+- Update test workflow ([1519e46](https://github.com/kiki-kanri/god-bless-your-code/commit/1519e46))
+- Update condition for uploading to Codecov in workflow job ([39851ac](https://github.com/kiki-kanri/god-bless-your-code/commit/39851ac))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v0.3.0
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.2.1...v0.3.0)
