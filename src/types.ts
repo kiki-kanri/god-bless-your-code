@@ -1,7 +1,12 @@
+import type { defaultBlessings } from './constants';
+
+export type DoNotRemoveOrUseThisType = typeof defaultBlessings;
+
 export type BlessingName =
   | 'alpaca'
   | 'buddha-normal'
   | 'buddha-with-poetry'
+  | 'cat'
   | 'dragon'
   | 'gopher'
   | 'guāiguāi';
@@ -12,15 +17,7 @@ export interface GodBlessYourCodeOptions {
      * If multiple are provided, one will be chosen at random per file.
      * These should match the filenames (without extension) in the blessing-texts folder.
      *
-     * @default
-     * [
-     *      'alpaca',
-     *      'buddha-normal',
-     *      'buddha-with-poetry',
-     *      'dragon',
-     *      'gopher',
-     *      'guāiguāi',
-     * ]
+     * The default value is {@link defaultBlessings}.
      */
     blessings?: BlessingName | BlessingName[];
 

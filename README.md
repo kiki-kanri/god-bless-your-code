@@ -117,6 +117,7 @@ Blessing names map to `.txt` files in [`./src/blessing-texts`](./src/blessing-te
 - alpaca
 - buddha-normal
 - buddha-with-poetry
+- cat
 - dragon
 - gopher
 - guāiguāi
