@@ -19,4 +19,5 @@ export default defineConfig({
         ],
     },
     additionalOutputPlugins: { default: { afterBuiltIns: [godBlessYourCode()] } },
+    builtInInputPluginOptions: { typescript: { tsconfig: './tsconfig.build.json' } },
 });
