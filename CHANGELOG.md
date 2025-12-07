@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.6.1
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.6.0...v0.6.1)
+
+### 🚀 Enhancements
+
+- Enable self-application of effects ([7387f33](https://github.com/kiki-kanri/god-bless-your-code/commit/7387f33))
+- Add rolldown playground ([5f3aa1e](https://github.com/kiki-kanri/god-bless-your-code/commit/5f3aa1e))
+
+### 📖 Documentation
+
+- Update README ([b14ef24](https://github.com/kiki-kanri/god-bless-your-code/commit/b14ef24))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v0.6.0
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.5.0...v0.6.0)
