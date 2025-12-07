@@ -1,0 +1,6 @@
+{
+  "extends": "@kikiutils/tsconfigs/esnext/es2023.json",
+  "compilerOptions": {
+    "noEmit": true
+  }
+}

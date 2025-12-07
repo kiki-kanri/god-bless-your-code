@@ -1,0 +1,72 @@
+{
+  "name": "package-template",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/author-or-organization/repo-name.git"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "require": null
+    },
+    "./*": "./dist/*.mjs",
+    "./index": {
+      "types": null,
+      "import": null,
+      "require": null
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "./dist",
+    "./src"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "bumplog": "changelogen --bump --hideAuthorEmail",
+    "depcheck": "depcheck",
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix --max-warnings 0",
+    "prepack": "pnpm run build",
+    "release": "pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build && changelogen --hideAuthorEmail --push --release && npm publish",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest watch --coverage",
+    "typecheck": "tsc -b --noEmit",
+    "unused-exports": "ts-unused-exports ./tsconfig.json"
+  },
+  "peerDependenciesMeta": {},
+  "devDependencies": {
+    "@antfu/eslint-config": "^6.2.0",
+    "@kikiutils/eslint-config": "^5.0.0",
+    "@kikiutils/tsconfigs": "^5.0.5",
+    "@types/node": "^24.10.0",
+    "@vitest/coverage-v8": "^4.0.8",
+    "changelogen": "^0.6.2",
+    "depcheck": "^1.4.7",
+    "publint": "^0.3.15",
+    "ts-unused-exports": "^11.0.1",
+    "tsdown": "^0.16.1",
+    "typescript": "^5.9.3",
+    "unplugin-unused": "^0.5.6",
+    "vitest": "^4.0.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
