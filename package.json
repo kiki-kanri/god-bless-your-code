@@ -12,22 +12,12 @@
   "keywords": [],
   "sideEffects": false,
   "exports": {
-    ".": {
-      "types": "./dist/index.d.mts",
-      "import": "./dist/index.mjs",
-      "require": null
-    },
-    "./*": "./dist/*.mjs",
-    "./index": {
-      "types": null,
-      "import": null,
-      "require": null
-    },
+    ".": "./dist/index.js",
     "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "./dist",
     "./src"
@@ -50,19 +40,19 @@
   },
   "peerDependenciesMeta": {},
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
+    "@antfu/eslint-config": "^6.4.2",
     "@kikiutils/eslint-config": "^5.0.0",
     "@kikiutils/tsconfigs": "^5.0.5",
-    "@types/node": "^24.10.0",
-    "@vitest/coverage-v8": "^4.0.8",
+    "@types/node": "^24.10.1",
+    "@vitest/coverage-v8": "^4.0.15",
     "changelogen": "^0.6.2",
     "depcheck": "^1.4.7",
     "publint": "^0.3.15",
     "ts-unused-exports": "^11.0.1",
-    "tsdown": "^0.16.1",
+    "tsdown": "^0.17.0",
     "typescript": "^5.9.3",
     "unplugin-unused": "^0.5.6",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.15"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
