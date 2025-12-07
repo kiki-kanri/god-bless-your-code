@@ -1,19 +1,61 @@
 {
-  "name": "package-template",
+  "name": "god-bless-your-code",
   "type": "module",
-  "version": "0.1.0",
-  "description": "",
-  "author": "",
+  "version": "0.5.0",
+  "description": "Bless your code with ASCII gods, monsters, and mystical powers — your last line of defense against bugs and angry PMs.",
+  "author": "kiki-kanri",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author-or-organization/repo-name.git"
+    "url": "git+https://github.com/kiki-kanri/god-bless-your-code.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ascii",
+    "ascii-art",
+    "bless",
+    "blessing",
+    "buddha",
+    "bun",
+    "bun-plugin",
+    "charm",
+    "code-style",
+    "comment",
+    "fun",
+    "god",
+    "magic",
+    "no-bugs",
+    "plugin",
+    "protect-code",
+    "ritual",
+    "rollup",
+    "rollup-plugin",
+    "vite",
+    "vite-plugin"
+  ],
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.js",
-    "./package.json": "./package.json"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": null
+    },
+    "./*": "./dist/*.js",
+    "./index": {
+      "types": null,
+      "import": null,
+      "require": null
+    },
+    "./package.json": "./package.json",
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": null,
+      "require": null
+    },
+    "./types/index": {
+      "types": null,
+      "import": null,
+      "require": null
+    }
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -27,8 +69,10 @@
   },
   "scripts": {
     "build": "tsdown",
+    "build:vite": "vite build --config ./playground/vite/vite.config.ts",
     "bumplog": "changelogen --bump --hideAuthorEmail",
     "depcheck": "depcheck",
+    "dev:rollup": "rollup -c ./playground/rollup/rollup.config.mjs --watch",
     "lint": "eslint --max-warnings 0",
     "lint:fix": "eslint --fix --max-warnings 0",
     "prepack": "pnpm run build",
@@ -38,21 +82,37 @@
     "typecheck": "tsc -b --noEmit",
     "unused-exports": "ts-unused-exports ./tsconfig.json"
   },
-  "peerDependenciesMeta": {},
+  "peerDependencies": {
+    "rollup": "^4.53.3",
+    "vite": "^7.2.6"
+  },
+  "peerDependenciesMeta": {
+    "rollup": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^6.4.2",
     "@kikiutils/eslint-config": "^5.0.0",
     "@kikiutils/tsconfigs": "^5.0.5",
     "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.2",
     "@vitest/coverage-v8": "^4.0.15",
     "changelogen": "^0.6.2",
     "depcheck": "^1.4.7",
     "publint": "^0.3.15",
+    "rollup": "^4.53.3",
     "ts-unused-exports": "^11.0.1",
     "tsdown": "^0.17.0",
+    "tslib": "^2.8.1",
     "typescript": "^5.9.3",
     "unplugin-unused": "^0.5.6",
-    "vitest": "^4.0.15"
+    "vite": "^7.2.6",
+    "vitest": "^4.0.15",
+    "vue": "^3.5.25"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
