@@ -1,5 +1,106 @@
 # Changelog
 
+## v0.6.0
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.5.0...v0.6.0)
+
+### 🚀 Enhancements
+
+- Add `update-peer-dependencies-meta.ts` ([643c006](https://github.com/kiki-kanri/god-bless-your-code/commit/643c006))
+
+### 🩹 Fixes
+
+- Resolve alias configuration error in tsdown setup ([656e2e0](https://github.com/kiki-kanri/god-bless-your-code/commit/656e2e0))
+- Add missing -b flag to typecheck command ([cf0c795](https://github.com/kiki-kanri/god-bless-your-code/commit/cf0c795))
+- Remove custom exports configuration from tsdown ([efb18bc](https://github.com/kiki-kanri/god-bless-your-code/commit/efb18bc))
+- Remove tsdown `remove-types-js` plugin ([6922c2f](https://github.com/kiki-kanri/god-bless-your-code/commit/6922c2f))
+- Remove tsdown remove-types-js plugin and custom exports configuration ([735a3a9](https://github.com/kiki-kanri/god-bless-your-code/commit/735a3a9))
+- Ensure tsdown `customExports` returns after deleting keys containing internals ([7324bab](https://github.com/kiki-kanri/god-bless-your-code/commit/7324bab))
+
+### 💅 Refactors
+
+- **tsconfig:** Separate references so src and tests use different settings ([df472e2](https://github.com/kiki-kanri/god-bless-your-code/commit/df472e2))
+- Rename func parameters in `arr.map` and similar methods to `item` for consistency ([c5768ac](https://github.com/kiki-kanri/god-bless-your-code/commit/c5768ac))
+- Tidy up code ([1a92f2c](https://github.com/kiki-kanri/god-bless-your-code/commit/1a92f2c))
+
+### 📖 Documentation
+
+- Update README ([63ba464](https://github.com/kiki-kanri/god-bless-your-code/commit/63ba464))
+- Update README ([eb8eefe](https://github.com/kiki-kanri/god-bless-your-code/commit/eb8eefe))
+
+### 📦 Build
+
+- ⚠️  Switch builder to tsdown and convert package to pure ESM ([d307be4](https://github.com/kiki-kanri/god-bless-your-code/commit/d307be4))
+- Clean up js files under `dist/types` after tsdown build and update exports config ([2affd31](https://github.com/kiki-kanri/god-bless-your-code/commit/2affd31))
+- Clean up js files under `dist/types` after tsdown build and update exports config ([299e647](https://github.com/kiki-kanri/god-bless-your-code/commit/299e647))
+- Clean up js files under `dist/types` after tsdown build and update exports config ([6fa1d2b](https://github.com/kiki-kanri/god-bless-your-code/commit/6fa1d2b))
+- Update tsdown config to treat all dependencies as external ([f5e4f7a](https://github.com/kiki-kanri/god-bless-your-code/commit/f5e4f7a))
+- Update tsdown customExports to remove entries with keys containing "internals" ([59b1622](https://github.com/kiki-kanri/god-bless-your-code/commit/59b1622))
+- Update tsdown entry ([2e67d6b](https://github.com/kiki-kanri/god-bless-your-code/commit/2e67d6b))
+- Set tsdown external from package.json instead of using wildcard * ([7dc5f28](https://github.com/kiki-kanri/god-bless-your-code/commit/7dc5f28))
+- Update `customExports` rules to enable IDE import hints for package usage ([e4111c0](https://github.com/kiki-kanri/god-bless-your-code/commit/e4111c0))
+- Update `customExports` rules to enable IDE import hints for package usage ([fa88888](https://github.com/kiki-kanri/god-bless-your-code/commit/fa88888))
+
+### 🏡 Chore
+
+- Upgrade dependencies and remove `@types/node` ([32aaf31](https://github.com/kiki-kanri/god-bless-your-code/commit/32aaf31))
+- Wrap all variable expansions in scripts with `${}` ([82c47c9](https://github.com/kiki-kanri/god-bless-your-code/commit/82c47c9))
+- Update dependencies and modify scripts ([374cc56](https://github.com/kiki-kanri/god-bless-your-code/commit/374cc56))
+- ⚠️  Drop support for Node.js 18.12.1, set minimum supported version to 20 ([32c6ad3](https://github.com/kiki-kanri/god-bless-your-code/commit/32c6ad3))
+- Bump tsconfig target to es2023 ([b9185b7](https://github.com/kiki-kanri/god-bless-your-code/commit/b9185b7))
+- Update `.gitignore` ([1465997](https://github.com/kiki-kanri/god-bless-your-code/commit/1465997))
+- **ci:** Configure pnpm cache in workflow ([79e2264](https://github.com/kiki-kanri/god-bless-your-code/commit/79e2264))
+- **ci:** Remove pnpm cache configure in workflow ([abc0801](https://github.com/kiki-kanri/god-bless-your-code/commit/abc0801))
+- ⚠️  Drop support for Node.js 20, set minimum supported version to 22 ([3319820](https://github.com/kiki-kanri/god-bless-your-code/commit/3319820))
+- Upgrade devDependencies ([57244a0](https://github.com/kiki-kanri/god-bless-your-code/commit/57244a0))
+- Set tsdown alias and tsconfig paths ([be49779](https://github.com/kiki-kanri/god-bless-your-code/commit/be49779))
+- Update tsdown config ([fc9e7cb](https://github.com/kiki-kanri/god-bless-your-code/commit/fc9e7cb))
+- Add `tsconfig.base.json` ([f6ba6dd](https://github.com/kiki-kanri/god-bless-your-code/commit/f6ba6dd))
+- Update eslint config ([99cd82e](https://github.com/kiki-kanri/god-bless-your-code/commit/99cd82e))
+- Update tsdown entry ([9cbb6bb](https://github.com/kiki-kanri/god-bless-your-code/commit/9cbb6bb))
+- Disable `isolatedDeclarations` ([85f066e](https://github.com/kiki-kanri/god-bless-your-code/commit/85f066e))
+- Update eslint config ([09d584b](https://github.com/kiki-kanri/god-bless-your-code/commit/09d584b))
+- Update all scripts ([fa5e797](https://github.com/kiki-kanri/god-bless-your-code/commit/fa5e797))
+- Set minimum supported version to 22.12.0 ([76e8cc1](https://github.com/kiki-kanri/god-bless-your-code/commit/76e8cc1))
+- Remove alias config ([e353604](https://github.com/kiki-kanri/god-bless-your-code/commit/e353604))
+- Change `update-peer-dependencies-meta.ts` to non-executable permission file ([62a7690](https://github.com/kiki-kanri/god-bless-your-code/commit/62a7690))
+- Update base tsconfig ([26f4158](https://github.com/kiki-kanri/god-bless-your-code/commit/26f4158))
+- Add `.editorconfig` ([11056ce](https://github.com/kiki-kanri/god-bless-your-code/commit/11056ce))
+- Upgrade devDependencies ([aca04e8](https://github.com/kiki-kanri/god-bless-your-code/commit/aca04e8))
+- Replace `@kikiutils/changelogen` with `changelogen` ([8d1d648](https://github.com/kiki-kanri/god-bless-your-code/commit/8d1d648))
+- Update script ([44312fb](https://github.com/kiki-kanri/god-bless-your-code/commit/44312fb))
+- Update `pnpm.onlyBuiltDependencies` ([9788a78](https://github.com/kiki-kanri/god-bless-your-code/commit/9788a78))
+- Update tsdown config ([59407a9](https://github.com/kiki-kanri/god-bless-your-code/commit/59407a9))
+- Disable tsdown `fixedExtension` config ([9039405](https://github.com/kiki-kanri/god-bless-your-code/commit/9039405))
+- Update eslint config ([e75c3d7](https://github.com/kiki-kanri/god-bless-your-code/commit/e75c3d7))
+- Remove all files ([1c5ae5e](https://github.com/kiki-kanri/god-bless-your-code/commit/1c5ae5e))
+- Add base files ([238a594](https://github.com/kiki-kanri/god-bless-your-code/commit/238a594))
+- Update LICENSE ([caf104e](https://github.com/kiki-kanri/god-bless-your-code/commit/caf104e))
+- Remove tslib dep ([bc69e27](https://github.com/kiki-kanri/god-bless-your-code/commit/bc69e27))
+- Revert CHANGELOG ([f30db1a](https://github.com/kiki-kanri/god-bless-your-code/commit/f30db1a))
+- Enable vue eslint rules ([a874feb](https://github.com/kiki-kanri/god-bless-your-code/commit/a874feb))
+
+### ✅ Tests
+
+- Change vitest config file to mjs ([5c3bc1f](https://github.com/kiki-kanri/god-bless-your-code/commit/5c3bc1f))
+- Fix vitest config to correctly load tsconfig and aliases ([0522f79](https://github.com/kiki-kanri/god-bless-your-code/commit/0522f79))
+
+### 🤖 CI
+
+- Set `--prod=false` when install dependencies ([93d7945](https://github.com/kiki-kanri/god-bless-your-code/commit/93d7945))
+- Remove `--prod=false` flag when install dependencies ([249def0](https://github.com/kiki-kanri/god-bless-your-code/commit/249def0))
+- Update config file ([cfba23c](https://github.com/kiki-kanri/god-bless-your-code/commit/cfba23c))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Switch builder to tsdown and convert package to pure ESM ([d307be4](https://github.com/kiki-kanri/god-bless-your-code/commit/d307be4))
+- ⚠️  Drop support for Node.js 18.12.1, set minimum supported version to 20 ([32c6ad3](https://github.com/kiki-kanri/god-bless-your-code/commit/32c6ad3))
+- ⚠️  Drop support for Node.js 20, set minimum supported version to 22 ([3319820](https://github.com/kiki-kanri/god-bless-your-code/commit/3319820))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v0.5.0
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.4.0...v0.5.0)

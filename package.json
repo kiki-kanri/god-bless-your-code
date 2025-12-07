@@ -1,7 +1,7 @@
 {
   "name": "god-bless-your-code",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Bless your code with ASCII gods, monsters, and mystical powers — your last line of defense against bugs and angry PMs.",
   "author": "kiki-kanri",
   "license": "MIT",
