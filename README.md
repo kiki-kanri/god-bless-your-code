@@ -15,7 +15,7 @@ Bless your code with ASCII gods, monsters, and mystical powers — your last lin
 ## Features
 
 - 🧘 Add ASCII blessings (Buddha, dragons, magical charms...) into your code
-- 🎯 Works as a utility or plugin — compatible with Rollup, Vite, Bun, and more
+- 🎯 Works as a utility or plugin — compatible with Rollup, Rolldown, Vite, Bun, and more
 - 🎲 Random or fixed selection of blessing arts
 - ✨ Choose blessing placement: top or bottom of the output
 - 🛡️ For spiritual protection only. No guarantees against bugs or cursed deadlines
@@ -40,13 +40,13 @@ You can also use `yarn`, `npm`, or `bun`.
 
 Coming soon.
 
-### Rollup
+### Rolldown/Rollup
 
-Here's an example usage in your `rollup.config.mjs` file:
+Here's an example usage in your `rolldown.config.ts` or `rollup.config.mjs` file:
 
 ```typescript
 import { godBlessYourCode } from 'god-bless-your-code/rollup';
-import { defineConfig } from 'rollup';
+import { defineConfig } from 'rollup'; // or import { defineConfig } from 'rolldown';
 
 export default defineConfig({
     input: './src/index.ts',
