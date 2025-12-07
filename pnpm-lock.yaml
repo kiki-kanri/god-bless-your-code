@@ -47,6 +47,9 @@ importers:
       rollup:
         specifier: ^4.53.3
         version: 4.53.3
+      self:
+        specifier: npm:god-bless-your-code@^0.6.0
+        version: god-bless-your-code@0.6.0(rollup@4.53.3)(vite@7.2.6(@types/node@24.10.1)(jiti@1.21.7)(yaml@2.8.2))
       ts-unused-exports:
         specifier: ^11.0.1
         version: 11.0.1(typescript@5.9.3)
@@ -1598,6 +1601,18 @@ packages:
 
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
+
+  god-bless-your-code@0.6.0:
+    resolution: {integrity: sha512-0GBo6MB8muDvzXP/vz/V+UoBMP8D4/8rWEgiHB5xIqMS5yQjHcLLOAztXMaaztjbw/R4eNSGlnDjI9++ZjvUhA==}
+    engines: {node: '>=22.12.0'}
+    peerDependencies:
+      rollup: ^4.53.3
+      vite: ^7.2.6
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      vite:
+        optional: true
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
@@ -4278,6 +4293,11 @@ snapshots:
   globals@16.5.0: {}
 
   globrex@0.1.2: {}
+
+  god-bless-your-code@0.6.0(rollup@4.53.3)(vite@7.2.6(@types/node@24.10.1)(jiti@1.21.7)(yaml@2.8.2)):
+    optionalDependencies:
+      rollup: 4.53.3
+      vite: 7.2.6(@types/node@24.10.1)(jiti@1.21.7)(yaml@2.8.2)
 
   graceful-fs@4.2.11: {}
 

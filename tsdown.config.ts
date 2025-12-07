@@ -3,6 +3,7 @@ import {
     rm,
 } from 'node:fs/promises';
 
+import { godBlessYourCode } from 'self/rollup';
 import { defineConfig } from 'tsdown';
 
 import packageJson from './package.json' with { type: 'json' };
@@ -60,6 +61,7 @@ export default defineConfig({
     ],
     fixedExtension: false,
     format: 'esm',
+    outputOptions: { plugins: [godBlessYourCode()] },
     plugins: [
         {
             name: 'remove-types-js',
