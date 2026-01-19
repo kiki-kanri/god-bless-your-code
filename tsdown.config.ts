@@ -41,11 +41,16 @@ export default defineConfig({
                 exports[key] = newExports;
             });
 
-            // TODO: automatically add `./dist/*.js` from entry
-            exports['./*'] = './dist/*.js';
+            // Sort exports
             const sortedExports: Record<string, PackageJsonExportEntry> = {};
             Object.entries(exports).sort().forEach(([key, value]) => sortedExports[key] = value);
-            return sortedExports;
+
+            // Add star exports to latest
+            // TODO: automatically add `./dist/*.js` from entry
+            return {
+                ...sortedExports,
+                './*': './dist/*.js',
+            };
         },
     },
     external: [
