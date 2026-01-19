@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.6.2
+
+[compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.6.1...v0.6.2)
+
+### 🩹 Fixes
+
+- Adjust `customExports` order in `tsdown.config` to move wildcard (`*`) exports to the end ([0b3f357](https://github.com/kiki-kanri/god-bless-your-code/commit/0b3f357))
+
+### 🏡 Chore
+
+- Update deps ([105c9c1](https://github.com/kiki-kanri/god-bless-your-code/commit/105c9c1))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v0.6.1
 
 [compare changes](https://github.com/kiki-kanri/god-bless-your-code/compare/v0.6.0...v0.6.1)
